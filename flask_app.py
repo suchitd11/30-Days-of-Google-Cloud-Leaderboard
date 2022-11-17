@@ -8,18 +8,18 @@ app = Flask(__name__)
 app.permanent_session_lifetime = timedelta(hours=1)
 
 # Set a secret key for your application
-app.secret_key = ''
+app.secret_key = "b'\x89\xfe\x15\x03\xe8\xa4Lv\x7f\x139J'"
 
 # Configure Firebase project
 config = {
-  "apiKey": "REPLACE_WITH_ORIGINAL_VALUE",
-  "authDomain": "REPLACE_WITH_ORIGINAL_VALUE",
-  "databaseURL": "REPLACE_WITH_ORIGINAL_VALUE",
-  "projectId": "REPLACE_WITH_ORIGINAL_VALUE",
-  "storageBucket": "REPLACE_WITH_ORIGINAL_VALUE",
-  "messagingSenderId": "REPLACE_WITH_ORIGINAL_VALUE",
-  "appId": "REPLACE_WITH_ORIGINAL_VALUE",
-  "measurementId": "REPLACE_WITH_ORIGINAL_VALUE"
+  "apiKey": "AIzaSyAF-aN_HgcWnIv-xd2Jm1A5UJQklHzBegI",
+  "authDomain": "daysofcloud-6a7b4.firebaseapp.com",
+  "databaseURL": "https://daysofcloud-6a7b4-default-rtdb.firebaseio.com",
+  "projectId": "daysofcloud-6a7b4",
+  "storageBucket": "daysofcloud-6a7b4.appspot.com",
+  "messagingSenderId": "1011005667946",
+  "appId": "1:1011005667946:web:b18f9c8cac13b25c72a813",
+  "measurementId": "G-CTJ8CM3S4J"
 }
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
