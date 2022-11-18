@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSC SIES GST - 30 Days of Google Cloud Leaderboard</title>
+    <title>GDSC SIES GST - 30 Days of Google Cloud Leaderboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
@@ -180,7 +180,7 @@
             <!-- this contains logo and button design -->
             <a class="navbar-brand" href="#">
                 <img src="../static/images/dsc_siesgst_logo.png" height="45" alt="">
-                DSC SIES GST
+                GDSC SIES GST
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -236,11 +236,12 @@
             8/10/2021 1:00:00 p.m. IST
         </p>
         <p class="mt-2">
-            👑 - Completed both the tracks
+            <!-- 👑 - Completed both the tracks -->
+            Total Progress = No. of Courses Completed + No. of Skill Badges Completed
         </p>
-        <p class="mt-2">
+        <!-- <p class="mt-2">
             🏆 - Completed one track
-        </p>
+        </p> -->
 
         <!-- table designing starts here -->
 
@@ -251,7 +252,7 @@
                     Name
                 </th>
                 <th>
-                    Total quests
+                    Total Progress
                 </th>
             </tr>
 
@@ -260,18 +261,14 @@
 
                 <td>
                     {{ leader[0] }}
-                    {% if leader[3] == 12 %}
+                    <!-- {% if leader[3] == 12 %}
                     👑
                     {% elif leader[1] == 6 or leader[2] == 6 %}
                     🏆
-                    {% endif %}
+                    {% endif %} -->
                 </td>
                 <td>
-                    {% if leader[1] == 6 or leader[2] == 6 %}
-                    {{ leader[3]-1 }}
-                    {% else %}
                     {{ leader[3] }}
-                    {% endif %}
                 </td>
             </tr>
             {% endfor %}
@@ -291,11 +288,11 @@
                     <p style="font-size:15px; font-weight: 600; color: seashell;" class="flinks-2">GDSC</p>
                 </a>
                 <a class="nav-link active flinks"
-                    href="https://events.withgoogle.com/30daysofgooglecloud/program-syllabus/#content" target="_blank">
-                    <p style="font-size:15px;  font-weight: 600; color: seashell;" class="flinks-2">TRACKS</p>
+                    href="https://www.cloudskillsboost.google/paths/11" target="_blank">
+                    <p style="font-size:15px;  font-weight: 600; color: seashell;" class="flinks-2">PATH</p>
                 </a>
-                <a class="nav-link active flinks" href="https://www.qwiklabs.com/" target="_blank">
-                    <p style="font-size:15px;  font-weight: 600; color: seashell;" class="flinks-2">QWIKLABS</p>
+                <a class="nav-link active flinks" href="https://www.cloudskillsboost.google/" target="_blank">
+                    <p style="font-size:15px;  font-weight: 600; color: seashell;" class="flinks-2">CLOUD SKILL BOOST</p>
                 </a>
             </div>
             <div class="pt-4 text-center">

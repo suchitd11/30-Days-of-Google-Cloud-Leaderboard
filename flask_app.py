@@ -33,6 +33,7 @@ def index():
         leaderboard = pd.read_csv(my_csv)
         leaderboard = leaderboard.sort_values(by=['Total'], ascending=False)
         leaderboard = leaderboard.values.tolist()
+        # print(leaderboard)
         return render_template("index.html", leaderboard=leaderboard)
     else:
         return redirect(url_for('login'))
